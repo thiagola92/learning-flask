@@ -2,15 +2,15 @@
 `pip install flask`  
 
 # Run
-Existem duas maneiras de inicializar a aplicação flask
+Existem duas maneiras de inicializar a aplicação Flask
 
 ## Flask module
-Bote na variável de ambiente do flask o arquivo o qual ele deve executar quando for inicializado.  
+Bote na variável de ambiente do Flask o arquivo o qual ele deve executar quando for inicializado.  
 ```shell
 $export FLASK_APP=run01.py
 ```  
 
-Para inicializar flask  
+Para inicializar Flask  
 ```shell
 $flask run
 ```  
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     app.run()
 ```  
 
-Para inicializar flask basta executar como se fosse um programa de python  
+Para inicializar Flask basta executar como se fosse um programa de python  
 ```shell
 $python run.py
 ```

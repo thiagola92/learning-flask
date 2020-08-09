@@ -5,7 +5,7 @@ Não existe diferença entre montar uma página e montar uma API.
 Quando você está acessando a página pelo navegador, você está fazendo um simple GET request.  
 
 Uma maneira de você confirmar isto é utilizando a biblioteca **requests**.  
-Inicialize o flask e acesse qualquer página criada.  
+Inicialize o Flask e acesse qualquer página criada.  
 ```python
 response = requests.get('http://127.0.0.1:5000/')
 print(response.text)

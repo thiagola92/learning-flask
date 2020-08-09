@@ -1,15 +1,25 @@
+# URL
+Existem caracteres especiais dentro de um url.  
+
+Barra (**/**): Originalmente utilizado para indicar em qual diretório e arquivo você deseja acessar.  
+Interrogação (**?**): Utilizado no **final** do url para indicar o início de uma query.  
+E comercial (**&**): Utilizando dentro de uma query para indicar multiplos parâmetros.  
+
 # Parameters
-É possível receber parâmetros passados pela URL.  
+É possível receber como parâmetros valores passados na rota.  
 ```python
-@app.route('/<parameter_name>')
-def example(parameter_name):
-    return
+@app.route('/test1/<foo>')
+def main(foo):
+    return f'{foo}'
+
+@app.route('/test2/<foo>/<bar>')
+def main2(foo, bar):
+    return f'{foo} & {bar}'
 ```
 
-Barras podem ser usadas para separar parâmetros mas não é a melhor opção.  
+E até mesmo especificar o tipo esperado.  
 ```python
-@app.route('/<parameter_name>/<parameter_name2>')
-def example(parameter_name, parameter_name2):
-    return
+@app.route('/test3/<int:foo>')
+def main3(foo):
+    return f'{1 + foo}'
 ```
-
